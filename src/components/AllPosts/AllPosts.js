@@ -3,7 +3,6 @@ import PostCard from "./PostCard";
 export default function AllPosts() {
     return (
         <div className="page-content">
-            <div id="go-top"></div>
             <h1 className="heading">All Posts</h1>
 
             {/* TODO: Search Engine and Filter by topic */}
@@ -14,7 +13,11 @@ export default function AllPosts() {
 
             <PostCard />
             
-            <a href="#go-top" className="top">Go top</a>
+            <p className="top" onClick={(e) => {
+                e.preventDefault();
+                document.documentElement.scrollTop = 0;
+            }}>Go top</p>
         </div>
     )
 }
+

@@ -246,6 +246,11 @@ hr {
     color: #333;
     font-size: 700;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.top:hover {
+    font-weight: 700;
 }
 
 /* Profile */
