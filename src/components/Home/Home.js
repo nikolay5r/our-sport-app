@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import PopularTopicCard from "./PopularTopicCard";
 
 export default function Home() {
     return (
@@ -11,15 +12,9 @@ export default function Home() {
             <hr />
             <div className="popular-topics">
                 <h1 className="heading">Most popular sports</h1>
-                <div className="popular-topic">
-                    <a href="/posts/topic/football" className="popular-sport">Football</a>
-                </div>
-                <div className="popular-topic">
-                    <a href="/posts/topic/volleyball" className="popular-sport">Volleyball</a>
-                </div>
-                <div className="popular-topic">
-                    <a href="/posts/topic/basketball" className="popular-sport">Basketball</a>
-                </div>
+                <PopularTopicCard key="1001" sport="football" />
+                <PopularTopicCard key="1002" sport="volleyball" />
+                <PopularTopicCard key="1003" sport="basketball" />
             </div>
         </Fragment>
     )
