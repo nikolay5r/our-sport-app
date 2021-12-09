@@ -14,6 +14,7 @@ import MyPosts from './components/Posts/MyPosts/MyPosts';
 import MyProfile from './components/MyProfile/MyProfile';
 import CreatePost from './components/Posts/CreatePost';
 import PostDetails from './components/Posts/PostDetails/PostDetails';
+import EditPost from './components/Posts/EditPost';
 
 function App() {
     return (
@@ -26,10 +27,11 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/posts" element={<AllPosts />} />
-                <Route path="/posts/user/userId" element={<MyPosts />} /> 
-                <Route path="/profile/userId" element={<MyProfile />} /> 
-                <Route path="/posts/create" element={<CreatePost />} /> 
-                <Route path="/posts/postId" element={<PostDetails />} /> 
+                <Route path="/posts/user/userId" element={<MyPosts />} />
+                <Route path="/profile/userId" element={<MyProfile />} />
+                <Route path="/posts/create" element={<CreatePost />} />
+                <Route path="/posts/postId" element={<PostDetails />} />
+                <Route path="/posts/postId/edit" element={<EditPost />} />
 
             </Routes>
 

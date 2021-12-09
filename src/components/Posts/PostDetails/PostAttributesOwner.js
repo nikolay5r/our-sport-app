@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function AttributesOwner() {
+export default function PostAttributesOwner() {
     return (
         <div className="attributes">
             <Link to="/posts/postId/edit">Edit</Link>
