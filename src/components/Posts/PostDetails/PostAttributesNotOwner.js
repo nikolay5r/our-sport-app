@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function AttributesNotOwner() {
+export default function PostAttributesNotOwner() {
     return (
         <div className="attributes">
             <Link to="/posts/postId/like">Like</Link>

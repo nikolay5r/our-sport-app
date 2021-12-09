@@ -9,11 +9,11 @@ import Footer from './components/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
-import AllPosts from './components/AllPosts/AllPosts'
-import MyPosts from './components/MyPosts/MyPosts';
+import AllPosts from './components/Posts/AllPosts/AllPosts'
+import MyPosts from './components/Posts/MyPosts/MyPosts';
 import MyProfile from './components/MyProfile/MyProfile';
-import CreatePost from './components/CreatePost';
-import Details from './components/Details/Details';
+import CreatePost from './components/Posts/CreatePost';
+import PostDetails from './components/Posts/PostDetails/PostDetails';
 
 function App() {
     return (
@@ -29,7 +29,7 @@ function App() {
                 <Route path="/posts/user/userId" element={<MyPosts />} /> 
                 <Route path="/profile/userId" element={<MyProfile />} /> 
                 <Route path="/posts/create" element={<CreatePost />} /> 
-                <Route path="/posts/postId" element={<Details />} /> 
+                <Route path="/posts/postId" element={<PostDetails />} /> 
 
             </Routes>
 
