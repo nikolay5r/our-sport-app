@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import AllPosts from './components/AllPosts/AllPosts'
+import MyPosts from './components/MyPosts/MyPosts';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/posts" element={<AllPosts />} />
+                <Route path="/posts/user/userId" element={<MyPosts />} /> 
 
             </Routes>
 
