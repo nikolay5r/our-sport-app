@@ -28,6 +28,7 @@ function App() {
                 <Route path="/posts/user/userId" element={<MyPosts />} /> 
                 <Route path="/profile/userId" element={<MyProfile />} /> 
                 <Route path="/posts/create" element={<CreatePost />} /> 
+                <Route path="/posts/postId" element={<CreatePost />} /> 
 
             </Routes>
 
