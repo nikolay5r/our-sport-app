@@ -1,10 +1,11 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function GuestNavigation() {
     return (
         <Fragment>
-            <a className="nav-link" href="/login">Login</a>
-            <a className="nav-link" href="/register">Register</a>
+            <NavLink className="nav-link" to="/login">Login</NavLink>
+            <NavLink className="nav-link" to="/register">Register</NavLink>
         </Fragment>
     )
 }

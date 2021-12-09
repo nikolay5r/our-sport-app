@@ -1,11 +1,12 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function UserNavigation() {
     return (
         <Fragment>
-            <a className="nav-link" href="/my-posts">My posts</a>
-            <a className="nav-link" href="/posts/create">Create Post</a>
-            <a className="nav-link" href="/profile/userId">My Profile</a>
+            <NavLink className="nav-link" to="/my-posts">My posts</NavLink>
+            <NavLink className="nav-link" to="/posts/create">Create Post</NavLink>
+            <NavLink className="nav-link" to="/profile/userId">My Profile</NavLink>
         </Fragment>
     )
 }

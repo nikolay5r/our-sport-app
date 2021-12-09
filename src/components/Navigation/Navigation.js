@@ -1,12 +1,13 @@
 import UserNavigation from "./UserNavigation";
 import GuestNavigation from "./GuestNavigation";
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
     return (
         <header className="navigation">
-            <a className="logo our-sport" href="/">Our Sport</a>
+            <NavLink className="logo our-sport" to="/">Our Sport</NavLink>
             <div className="right">
-                <a className="nav-link" href="/posts">All Posts</a>
+                <NavLink className="nav-link" to="/posts">All Posts</NavLink>
                 {/*  User */}
                 <UserNavigation />
                 {/* Guest */}
