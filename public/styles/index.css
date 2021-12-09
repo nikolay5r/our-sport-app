@@ -6,15 +6,16 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, body, #root {
     min-height: 100vh;
     max-height: auto;
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     background-color: rgb(241, 241, 241);
     font-family: 'Libre Baskerville', serif;
     overflow-x: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-content {
@@ -22,13 +23,11 @@ html, body {
     padding-bottom: 20px;
     text-align: center;
     position: relative;
-    top: 50%;
     left: 50%;
     transform: translate(-50%);
     width: 70%;
-    margin-top: 60px;
     flex: 1 0 auto;
-    text-align: center;
+    margin-top: 60px;
 }
 
 
@@ -358,9 +357,7 @@ hr {
 
 .login form {
     top: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    transform: translateY(50%);
 }
 
 .account form,
