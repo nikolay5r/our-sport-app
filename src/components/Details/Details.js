@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom'
-import Comment from './Comment'
+import { Link } from 'react-router-dom';
+import AttributesOwner from './AttributesOwner';
+import AttributesNotOwner from './AttributesNotOwner';
+import Comment from './Comment';
 
 export default function Details() {
     return (
@@ -14,14 +16,7 @@ export default function Details() {
                         nisi autem hic
                         sapiente explicabo natus itaque voluptates fugit nostrum.</p>
                 </div>
-                <div className="attributes">
-                    {/* If not owner */}
-                    <Link to="/posts/postId/like">Like</Link>
-                    <Link to="/posts/postId/dislike">Dislike</Link>
-                    {/* If owner */}
-                    <Link to="/posts/postId/edit">Edit</Link>
-                    <Link to="/posts/postId/delete">Delete</Link>
-                </div>
+                {true ? <AttributesOwner /> : <AttributesNotOwner />}
                 <div className="comments">
                     <h3>Comments: *Number of comments*</h3>
                     <Comment />
