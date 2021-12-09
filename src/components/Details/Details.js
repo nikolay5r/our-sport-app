@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Comment from './Comment'
 
 export default function Details() {
     return (
@@ -23,26 +24,7 @@ export default function Details() {
                 </div>
                 <div className="comments">
                     <h3>Comments: *Number of comments*</h3>
-                    <div className="comment">
-                        <Link to="/profile/userId">Username</Link>:
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Eligendi ex magnam distinctio iusto quam similique architecto, eveniet dolor rem
-                            nobis
-                            dolore iste, repellendus temporibus natus soluta consectetur illo veritatis.
-                            Fuga blanditiis repudiandae magnam animi reiciendis explicabo cupiditate
-                            architecto velit
-                            dicta?</p>
-                    </div>
-                    <div className="comment">
-                        <Link to="/profile/userId">Username</Link>:
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Eligendi ex magnam distinctio iusto quam similique architecto, eveniet dolor rem
-                            nobis
-                            dolore iste, repellendus temporibus natus soluta consectetur illo veritatis.
-                            Fuga blanditiis repudiandae magnam animi reiciendis explicabo cupiditate
-                            architecto velit
-                            dicta?</p>
-                    </div>
+                    <Comment />
                 </div>
             </div>
         </div>
