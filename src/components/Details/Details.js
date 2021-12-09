@@ -1,7 +1,7 @@
 import AttributesOwner from './AttributesOwner';
 import AttributesNotOwner from './AttributesNotOwner';
-import Comment from './Comment';
 import PostInfo from './PostInfo';
+import Comments from './Comments';
 
 export default function Details() {
     return (
@@ -10,10 +10,7 @@ export default function Details() {
             <div className="details">
                 <PostInfo />
                 {true ? <AttributesOwner /> : <AttributesNotOwner />}
-                <div className="comments">
-                    <h3>Comments: *Number of comments*</h3>
-                    <Comment />
-                </div>
+                <Comments />
             </div>
         </div>
     )
