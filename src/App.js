@@ -1,15 +1,17 @@
 import './App.css';
-import Navigation from './components/Header/Navigation';
-import Footer from './components/Footer';
 import { Fragment } from 'react';
+
+import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer';
+import Home from './components/Home/Home';
 
 function App() {
     return (
         <Fragment>
             <Navigation />
 
+            <Home />
             
-
             <Footer />
         </Fragment >
     );
