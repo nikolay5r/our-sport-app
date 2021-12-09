@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function MyPostCard() {
     return (
-        <div class="my-post-card">
+        <div className="my-post-card">
             <img src="./images/cover_image.jpg" alt="" />
-            <div class="info">
+            <div className="info">
                 <p>Post name</p>
-                <a href="">View Details</a>
+                <Link to="/posts/postId">View Details</Link>
             </div>
         </div>
     )
