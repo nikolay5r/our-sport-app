@@ -1,13 +1,10 @@
-import { Link } from "react-router-dom";
+import MyPostInfo from "./MyPostInfo";
 
 export default function MyPostCard() {
     return (
         <div className="my-post-card">
-            <img src="./images/cover_image.jpg" alt="" />
-            <div className="info">
-                <p>Post name</p>
-                <Link to="/posts/postId">View Details</Link>
-            </div>
+            <img src="./images/5e64d06674c6a.jpeg" alt="My Post" />
+            <MyPostInfo postTitle={'My post'} />
         </div>
     )
 }
