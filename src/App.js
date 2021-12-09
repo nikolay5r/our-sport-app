@@ -1,12 +1,15 @@
 import './App.css';
-import Header from './components/Header';
+import Navigation from './components/Header/Navigation';
 import Footer from './components/Footer';
 import { Fragment } from 'react';
 
 function App() {
     return (
         <Fragment>
-            <Header />
+            <Navigation />
+
+            
+
             <Footer />
         </Fragment >
     );
