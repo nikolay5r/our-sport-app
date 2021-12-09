@@ -1,5 +1,9 @@
 import './App.css';
 import { Fragment } from 'react';
+import {
+    Route,
+    Routes
+} from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer';
@@ -10,8 +14,9 @@ function App() {
         <Fragment>
             <Navigation />
 
-            <Home />
-            
+            <Routes>
+            </Routes>
+
             <Footer />
         </Fragment >
     );
