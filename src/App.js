@@ -16,6 +16,7 @@ import CreatePost from './components/Posts/CreatePost';
 import PostDetails from './components/Posts/PostDetails/PostDetails';
 import EditPost from './components/Posts/EditPost';
 import ChangePassword from './components/MyProfile/Settings/ChangePassword';
+import ChangeInfo from './components/MyProfile/Settings/ChangeInfo';
 
 function App() {
     return (
@@ -33,7 +34,8 @@ function App() {
                 <Route path="/posts/create" element={<CreatePost />} />
                 <Route path="/posts/postId" element={<PostDetails />} />
                 <Route path="/posts/postId/edit" element={<EditPost />} />
-                <Route path="/profile/userId/changePassword" element={<ChangePassword />} />
+                <Route path="/profile/userId/settings/changePassword" element={<ChangePassword />} />
+                <Route path="/profile/userId/settings/changeInfo" element={<ChangeInfo />} />
                 
 
             </Routes>
