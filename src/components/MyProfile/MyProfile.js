@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import MyProfileUser from "./MyProfileUser";
+import User from "./User";
 
 export default function MyProfile() {
     return (
@@ -12,6 +11,7 @@ export default function MyProfile() {
                     <Link to="/profile/userId/changePassword">Change Password</Link>
                     <Link to="/logout">Logout</Link>
                 </div>
+                <User />
             </div>
         </div>
     )

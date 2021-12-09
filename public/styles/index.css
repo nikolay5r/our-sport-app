@@ -279,13 +279,13 @@ hr {
     border: 1px solid #0077ff;
 }
 
-.profile-info {
+.user-info {
     margin-top: 50px;
     margin-left: 50px;
     text-align: left;
 }
 
-.profile-info li {
+.user-info li {
     margin: 20px 0 0 10px;
     list-style-type: none;
 }
