@@ -1,5 +1,5 @@
 import User from "./User";
-import Settings from "./Settings";
+import Settings from "./Settings/Settings";
 
 export default function MyProfile() {
     return (
