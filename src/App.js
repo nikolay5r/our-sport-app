@@ -13,6 +13,7 @@ import AllPosts from './components/AllPosts/AllPosts'
 import MyPosts from './components/MyPosts/MyPosts';
 import MyProfile from './components/MyProfile/MyProfile';
 import CreatePost from './components/CreatePost';
+import Details from './components/Details/Details';
 
 function App() {
     return (
@@ -28,7 +29,7 @@ function App() {
                 <Route path="/posts/user/userId" element={<MyPosts />} /> 
                 <Route path="/profile/userId" element={<MyProfile />} /> 
                 <Route path="/posts/create" element={<CreatePost />} /> 
-                <Route path="/posts/postId" element={<CreatePost />} /> 
+                <Route path="/posts/postId" element={<Details />} /> 
 
             </Routes>
 
