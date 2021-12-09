@@ -37,8 +37,9 @@ function App() {
                 <Route path="/posts/postId/edit" element={<EditPost />} />
                 <Route path="/profile/userId/settings/changePassword" element={<ChangePassword />} />
                 <Route path="/profile/userId/settings/changeInfo" element={<ChangeInfo />} />
-                <Route element={<Error404 />} />
 
+                <Route path="*" element={<Error404 />} />
+                
             </Routes>
 
             <Footer />
