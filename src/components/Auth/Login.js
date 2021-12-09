@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 export default function Login() {
     return (
         <div className="page-content">
@@ -11,7 +14,7 @@ export default function Login() {
                     <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
                         value="" id="password" />
                     <input type="submit" value="Login" />
-                    <p>You don't have an account? Go to <a href="">Register</a>!</p>
+                    <p>You don't have an account? Go to <Link to="/register">Register</Link>!</p>
                 </form>
             </div>
         </div>
