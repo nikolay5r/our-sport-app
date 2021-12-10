@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import {
+    Navigate,
     Route,
     Routes
 } from 'react-router-dom';
@@ -26,7 +27,8 @@ function App() {
 
             <Routes>
 
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Navigate from="/" to="/home" />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/posts" element={<AllPosts />} />

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function PostCardContent() {
     return (
         <div className="post-content">
-            <img src="./images/generic-basketball-shot.jpg" alt="Post Title" className="post-image" />
+            <img src="/images/generic-basketball-shot.jpg" alt="Post Title" className="post-image" />
             <p className="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quisquam sequi pariatur
                 quidem natus veritatis obcaecati quia modi odit quam, magni omnis!
