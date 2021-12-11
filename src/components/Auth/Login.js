@@ -7,11 +7,11 @@ export default function Login() {
                 <form action="">
                     <h1 className="heading">Login</h1>
 
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="email@gmail.com" value="" id="email" />
-                    <label for="password">Password</label>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" placeholder="email@gmail.com" id="email" />
+                    <label htmlFor="password">Password</label>
                     <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
-                        value="" id="password" />
+                        id="password" />
                     <input type="submit" value="Login" />
                     <p>You don't have an account? Go to <Link to="/register">Register</Link>!</p>
                 </form>

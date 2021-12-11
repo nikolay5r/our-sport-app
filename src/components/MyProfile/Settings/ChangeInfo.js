@@ -1,31 +1,31 @@
 export default function ChangeInfo() {
     return (
-        <div class="page-content">
-            <h1 class="heading">Settings</h1>
-            <div class="change-profile-settings">
+        <div className="page-content">
+            <h1 className="heading">Settings</h1>
+            <div className="change-profile-settings">
                 <h2>Change Profile Information</h2>
-                <label for="first-name">First name</label>
-                <input type="text" value="Ivan" id="first-name" name="first-name" />
-                <label for="last-name">Last name</label>
-                <input type="text" value="Volov" id="last-name" name="last-name" />
-                <label for="username">Username</label>
-                <input type="text" value="Ivan48" id="username" name="username" />
-                <label for="email">Email</label>
-                <input type="email" value="email@gmail.com" id="email" name="email" />
-                <div class="account-details">
-                    <div class="birthday">
-                        <label for="birthday">Birthday</label>
-                        <input type="date" name="birthday" id="birthday" value="2017-06-01" min="1950-01-01" max="" />
+                <label htmlFor="first-name">First name</label>
+                <input type="text" defaultValue="Ivan" id="first-name" name="first-name" />
+                <label htmlFor="last-name">Last name</label>
+                <input type="text" defaultValue="Volov" id="last-name" name="last-name" />
+                <label htmlFor="username">Username</label>
+                <input type="text" defaultValue="Ivan48" id="username" name="username" />
+                <label htmlFor="email">Email</label>
+                <input type="email" defaultValue="email@gmail.com" id="email" name="email" />
+                <div className="account-details">
+                    <div className="birthday">
+                        <label htmlFor="birthday">Birthday</label>
+                        <input type="date" name="birthday" id="birthday" defaultValue="2017-06-01" min="1950-01-01" max="" />
                     </div>
-                    <div class="gender">
+                    <div className="gender">
                         <p>Gender</p>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="male" value="male" checked />
-                        <label for="female">Female</label>
+                        <label htmlFor="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male" defaultChecked />
+                        <label htmlFor="female">Female</label>
                         <input type="radio" name="gender" id="female" value="female" />
                     </div>
                 </div>
-                <label for="password">Current password</label>
+                <label htmlFor="password">Current password</label>
                 <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" id="password"
                     name="password" />
                 <input type="submit" value="Confirm" />

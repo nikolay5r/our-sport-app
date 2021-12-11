@@ -1,14 +1,14 @@
 export default function CreatePost() {
     return (
-        <div class="page-content">
-            <h1 class="heading">Create Post</h1>
-            <div class="create">
+        <div className="page-content">
+            <h1 className="heading">Create Post</h1>
+            <div className="create">
                 <form action="">
-                    <label for="title">Title</label>
+                    <label htmlFor="title">Title</label>
                     <input type="text" name="title" id="title" placeholder="New goalkeeper" maxLength="20" />
-                    <label for="image-url">Image url</label>
+                    <label htmlFor="image-url">Image url</label>
                     <input type="text" name="image-url" id="image-url" placeholder="http://site.com/image-url.gif" />
-                    <label for="topic">Topic</label>
+                    <label htmlFor="topic">Topic</label>
                     <select name="topic" id="topic">
                         <option value="football">Football</option>
                         <option value="volleyball">Volleyball</option>
@@ -17,8 +17,8 @@ export default function CreatePost() {
                         <option value="handball">Handball</option>
                         <option value="swimming">Swimming</option>
                     </select>
-                    <label for="description">Description</label>
-                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Write your description here . . ." maxlength="200" ></textarea>
+                    <label htmlFor="description">Description</label>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Write your description here . . ." maxLength="200" ></textarea>
                     <input type="submit" value="Create" />
                 </form>
             </div>

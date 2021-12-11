@@ -2,10 +2,10 @@ import MyPostCard from "./MyPostCard";
 
 export default function MyPosts() {
     return (
-        <div class="page-content">
+        <div className="page-content">
             <div id="go-top"></div>
-            <h1 class="heading">My Posts</h1>
-            <div class="my-posts">
+            <h1 className="heading">My Posts</h1>
+            <div className="my-posts">
                 
                 <MyPostCard />
                 <MyPostCard />
