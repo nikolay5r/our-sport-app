@@ -1,4 +1,4 @@
-import postService from '../../services/postService'; 
+import postService from '../../services/postService';
 
 export default function CreatePost() {
     const submitHandler = async (e) => {
@@ -11,6 +11,7 @@ export default function CreatePost() {
         let description = formData.get('description');
         let topic = formData.get('topic');
 
+        await postService.create(title, imageUrl, description, topic)
     }
 
 
@@ -18,7 +19,7 @@ export default function CreatePost() {
         <div className="page-content">
             <h1 className="heading">Create Post</h1>
             <div className="create">
-                <form method='POST' onSubmit={submitHandler}>
+                <form method='POST' onSubmit={submitHandler} >
                     <label htmlFor="title">Title</label>
                     <input type="text" name="title" id="title" placeholder="New goalkeeper" maxLength="20" />
                     <label htmlFor="image-url">Image</label>
