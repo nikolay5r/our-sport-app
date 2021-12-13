@@ -1,12 +1,27 @@
+import postService from '../../services/postService'; 
+
 export default function CreatePost() {
+    const submitHandler = async (e) => {
+        e.preventDefault()
+
+        let formData = new FormData(e.currentTarget)
+
+        let title = formData.get('title');
+        let imageUrl = formData.get('image-url');
+        let description = formData.get('description');
+        let topic = formData.get('topic');
+
+    }
+
+
     return (
         <div className="page-content">
             <h1 className="heading">Create Post</h1>
             <div className="create">
-                <form action="">
+                <form method='POST' onSubmit={submitHandler}>
                     <label htmlFor="title">Title</label>
                     <input type="text" name="title" id="title" placeholder="New goalkeeper" maxLength="20" />
-                    <label htmlFor="image-url">Image url</label>
+                    <label htmlFor="image-url">Image</label>
                     <input type="text" name="image-url" id="image-url" placeholder="http://site.com/image-url.gif" />
                     <label htmlFor="topic">Topic</label>
                     <select name="topic" id="topic">
